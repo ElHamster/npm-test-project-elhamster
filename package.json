@@ -1,0 +1,36 @@
+{
+  "name": "npm-test-project-elhasmter",
+  "version": "0.0.1",
+  "description": "NPM Test project",
+  "license": "MIT",
+  "keywords": [
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElHamster/npm-test-project-elhamster.git"
+  },
+  "author": {
+    "name": "Robin Schuster",
+    "email": "robin.schuster@me.com"
+  },
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "pretty": "prettier --write --config .prettierrc.js src/**/*.{ts,tsx}"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.49",
+    "prettier": "^2.0.5",
+    "react": "16.13.1",
+    "typescript": "^3.9.7"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
+  }
+}
