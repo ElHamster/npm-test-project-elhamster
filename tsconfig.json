@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "outDir": "./dist",
+    "rootDir": "src",
+    "lib": ["es2015", "dom"],
+    "esModuleInterop": true,
+    "noImplicitAny": true,
     "module": "commonjs",
-    "declaration": true,
-    "outDir": "./build",
-    "strict": true,
+    "target": "es5",
     "jsx": "react",
-    "esModuleInterop": true
+    "pretty": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "__tests__/*", "bin", "build"]

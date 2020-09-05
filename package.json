@@ -15,17 +15,25 @@
     "email": "robin.schuster@me.com"
   },
   "files": [
-    "build/**/*"
+    "dist/**/*"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p . && yarn copy-types",
+    "copy-types": "copyfiles -f src/index.d.ts dist",
     "pretty": "prettier --write --config .prettierrc.js src/**/*.{ts,tsx}"
   },
   "devDependencies": {
     "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "copyfiles": "^2.3.0",
     "prettier": "^2.0.5",
     "react": "16.13.1",
+    "react-dom": "^16.13.1",
     "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "prettier": {
     "trailingComma": "es5",
