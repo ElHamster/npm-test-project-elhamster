@@ -17,6 +17,10 @@
   "files": [
     "dist/**/*"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p . && yarn copy-types",
     "copy-types": "copyfiles -f src/index.d.ts dist",
