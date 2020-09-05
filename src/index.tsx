@@ -1,5 +1,9 @@
 import React from 'react';
-import { ITestProps, ITestState } from './index';
+
+interface ITestProps {}
+
+interface ITestState {}
+
 
 class TestComponent extends React.Component<ITestProps, ITestState> {
     constructor(props: ITestProps) {
