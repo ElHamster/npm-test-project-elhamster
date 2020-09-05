@@ -1,5 +1,5 @@
 {
-  "name": "npm-test-project-elhasmter",
+  "name": "npm-test-project-elhamster",
   "version": "0.0.2",
   "description": "NPM Test project",
   "license": "MIT",
@@ -17,6 +17,7 @@
   "files": [
     "dist/**/*"
   ],
+  "main": "dist/TestComponent.js",
   "publishConfig": {
     "access": "public"
   },
